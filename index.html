@@ -6,6 +6,40 @@
 		<script scr="script/script.js"></script>
 	</head>
 	<body>
+		<h1>MOnthly Monte Carlo Simulator</h1>
+
+		<hr>
+		<h2>Inputs</h2>
+
+		<label for="beginDate">Beginning Date</label>
+		<input type="month" id="beginDate">
+
+		<label for="endDate">End Date</label>
+		<input type="month" id="endDate">
+
+		<label for="startingPrice">Starting Price ($)</label>
+		<input type="number" id="startingPrice">
+
+		<label for="monthlyVolatility">Monthly Volatility (%)</label>
+		<input type="number" id="monthlyVolatility">
+
+		<label for="meanPriceChange">Mean Price Change (%)</label>
+		<input type="number" id="meanPriceChange">
+		
+		<label for="priceFloor">Price Floor ($)</label>
+		<input type="number" id="priceFloor">
+
+		<label for="priceCeiling">Price Ceiling ($)</label>
+		<input type="number" id="priceCeiling">
+
+		<input type="button" id="generate" value="Generate Results">
+
+		<hr>
+		<h2>Outputs</h2>
+
+		<div id="outputs">
+			
+		</div>
 		
 	</body>
 </html>
