@@ -13,6 +13,7 @@ The purpose is to provide a Monte Carlo simulator for a price over the course of
 * End Date
 
 ## Outputs
+The following should be output for each month:
 * Mean Price
 * Median Price
 * Standard Deviation
