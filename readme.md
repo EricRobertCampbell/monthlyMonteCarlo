@@ -1,8 +1,8 @@
-= Monthly Monte Carlo Simulator
+# Monthly Monte Carlo Simulator
 
 The purpose is to provide a Monte Carlo simulator for a price over the course of a number of years.
 
-== Inputs
+## Inputs
 
 * Starting Price
 * Monthly Volatility
@@ -12,15 +12,15 @@ The purpose is to provide a Monte Carlo simulator for a price over the course of
 * Beginning Date
 * End Date
 
-== Outputs
+## Outputs
 * Mean Price
 * Median Price
 * Standard Deviation
 * Percentiles
-..* 5%
-..* 10%
-..* 25%
-..* 50%
-..* 75%
-..* 90%
-..* 95*
+	* 5%
+	* 10%
+	* 25%
+	* 50%
+	* 75%
+	* 90%
+	* 95*
