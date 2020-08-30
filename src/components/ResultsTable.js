@@ -1,31 +1,41 @@
 import React from "react";
+import { Button } from "@chakra-ui/core";
 
 const ResultsTable = ({ data }) => {
   if (!data) {
-    return null;
+    return <p>No results yet!</p>;
   }
   return (
     <>
       <table>
         <thead>
-          <th>Date</th>
-          <th>Mean</th>
-          <th>Median</th>
-          <th>Min</th>
-          <th>Max</th>
-          <th>Std. Dev.</th>
-          <th>Percentile (5%)</th>
-          <th>Percentile (10%)</th>
-          <th>Percentile (25%)</th>
-          <th>Percentile (50%)</th>
-          <th>percentile (75%)</th>
-          <th>Percentile (90%)</th>
-          <th>Percentile (95%)</th>
+          <tr>
+            <th colSpan={6}></th>
+            <th colSpan={7} style={{ borderBottom: "black 1px solid" }}>
+              Percentiles
+            </th>
+          </tr>
+
+          <tr>
+            <th>Date</th>
+            <th>Mean</th>
+            <th>Median</th>
+            <th>Min</th>
+            <th>Max</th>
+            <th>Std. Dev.</th>
+            <th>5%</th>
+            <th>10%</th>
+            <th>25%</th>
+            <th>50%</th>
+            <th>75%</th>
+            <th>90%</th>
+            <th>95%</th>
+          </tr>
         </thead>
         <tbody>
           <>
             {data.map((monthData, index) => (
-              <tr>
+              <tr key={index}>
                 <td>{monthData.month}</td>
                 <td>{monthData.mean.toFixed(2)}</td>
                 <td>{monthData.median.toFixed(2)}</td>

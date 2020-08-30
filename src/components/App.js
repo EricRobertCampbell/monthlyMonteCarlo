@@ -3,7 +3,7 @@ import { Heading, Stack } from "@chakra-ui/core";
 
 import MonthlyChart from "./MonthlyChart";
 import DataForm from "./DataForm";
-import ResultsTable from "./ResultsTable";
+import ResultsAccordion from "./ResultsAccordion";
 
 import { jStat } from "jstat";
 
@@ -178,7 +178,7 @@ const App = () => {
     <>
       <Heading as="h1">Monte Carlo Price Generator</Heading>
       <MonthlyChart data={graphData} />
-      <ResultsTable data={tableData} />
+      <ResultsAccordion data={tableData} />
       <DataForm onSubmit={handleSubmit} />
     </>
   );
