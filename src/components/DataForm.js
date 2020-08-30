@@ -1,5 +1,6 @@
 import React from "react";
 import { Form, Text } from "informed";
+import { Button } from "@chakra-ui/core/";
 
 const DataForm = ({ onSubmit }) => {
   return (
@@ -11,13 +12,13 @@ const DataForm = ({ onSubmit }) => {
       <br />
 
       <label>
-        Mean Monthly Volatility: <Text field="volatility" />
+        Mean Monthly Volatility (%): <Text field="volatility" />
       </label>
 
       <br />
 
       <label>
-        Mean Monthly Price Change <Text field="meanChange" />
+        Mean Monthly Price Change (%) <Text field="meanChange" />
       </label>
 
       <br />
@@ -35,18 +36,20 @@ const DataForm = ({ onSubmit }) => {
       <br />
 
       <label>
-        Beginning Date: <Text field="startDate" />
+        Beginning Date: <Text type="date" field="startDate" />
       </label>
 
       <br />
 
       <label>
-        End Date: <Text field="endDate" />
+        End Date: <Text type="date" field="endDate" />
       </label>
 
       <br />
 
-      <button type="submit">Submit!</button>
+      <Button type="submit" variant="solid">
+        Submit!
+      </Button>
     </Form>
   );
 };
